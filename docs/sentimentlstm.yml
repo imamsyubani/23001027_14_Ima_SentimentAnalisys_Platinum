@@ -1,0 +1,13 @@
+      parameters:
+        - name: text
+          in: query
+          type: string
+          required: true
+    
+      responses:
+        200:
+          description: Data berhasil dibersihkan
+        400:
+          description: Parameter tidak valid
+        404:
+          description: File tidak ditemukan

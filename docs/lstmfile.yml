@@ -1,0 +1,16 @@
+      parameters:
+        - name: file
+          in: formData
+          type: file
+          required: true
+        - name: kolom
+          in: query
+          type: string
+          required: true
+      responses:
+        200:
+          description: Data berhasil dibersihkan
+        400:
+          description: Parameter tidak valid
+        404:
+          description: File tidak ditemukan
